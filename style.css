@@ -77,12 +77,15 @@ body {
   padding: 0px 0px;
   font-size: 48px; 
 }
+
 .date-text {
+  display: block;
+  box-sizing: padding-box;
   height: unset;
   overflow:hidden;
   resize: none;
   width: 100%;
-  padding: 0px 0px;
+  padding: 0px;
   border: none;
   background-color: transparent;
   font: inherit;
@@ -121,9 +124,6 @@ div:empty:before {
   padding: 0px 0;
   margin-right: auto;
   color: #BDBDBD;
-}
-
-.datetext-counter .char-counter {
 }
 
 /*text-inner*/
