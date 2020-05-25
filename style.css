@@ -1,5 +1,6 @@
 * {
   outline: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,42 +10,36 @@ body {
 
 .layout {
   display: flex;
-  margin: 0 -35px; 
+  justify-content: space-between;
 }
 
 .left-column {
-  height: 100vh;
-  overflow-y: scroll;
 }
 
 .right-column {
-  position: relative;  
-  height: 100vh;
-  width: 100%;
-  overflow-y: scroll;
-  padding: 0px 35px;
+  flex-grow: 1;
+  background-color: white;
+  padding: 0 35px;
 }
 
 .sidebar {
-  max-width: 0px;
+  width: 0px;
   transition: 0.3s;
 }
 
 .sidebar.sidebar--opened {
-  max-width: 500px;
+  width: 500px;
 }
 
-.header{
-  position: absolute;
-  top:0;
+.header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  border-bottom: 2px solid #BDBDBD;
+  border-bottom: 2px solid #bdbdbd;
+  background-color: white;
 }
 
 .button {
-  color:  #BDBDBD;
+  color: #bdbdbd;
   border: none;
   background-color: #ffffff;
   padding: 12px 12px;
@@ -53,12 +48,17 @@ body {
   transition: 0.3s;
 }
 
-button:hover{
+button:hover {
   color: #333333;
   cursor: pointer;
 }
 
-.content{
-  margin-top: 45px;
+.content {
+  height: calc(100vh - 47px);
+  overflow-y: scroll;
 }
 
+.cards {
+  height: calc(100vh - 20px);
+  overflow-y: scroll;
+}
