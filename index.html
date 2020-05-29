@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FLoodle: daily feed</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b3e38a6dbf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400;500;700&family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="layout">
-      <section class='left-column'>
-        <div class = 'sidebar'>
-
+      <section class="left-column">
+        <div class="sidebar">
           <div class="sidebar__header">
             <div class="logo">Floodle</div>
           </div>
-          
-          <div class="cards">
 
+          <div class="cards">
             <div class="card">
               <div class="card__dot card__dot--visible"></div>
               <div class="card__date">22.05.20</div>
-              <div class="card__discription">Ad vel dolorem definitionem. Id pericula theophrastus sea, vis ne aeque partem tibique, ne suas everti probatus nec.</div>
+              <div class="card__discription">
+                Ad vel dolorem definitionem. Id pericula theophrastus sea, vis
+                ne aeque partem tibique, ne suas everti probatus nec.
+              </div>
             </div>
-
           </div>
-          
+
           <div class="sidebar__footer">
-            <button class="info-button button">Created by <br>...</button>
-            <button class="settings-button button"><i class="fas fa-cog"></i></button>
+            <button class="info-button button">Created by <br />...</button>
+            <button class="settings-button button">
+              <i class="fas fa-cog"></i>
+            </button>
           </div>
-
-        </>
+        </div>
       </section>
 
-      <section class='right-column'>
+      <section class="right-column">
         <header class="header">
-
           <div class="header__left-column">
             <button class="menu-button button">
               <i class="fas fa-bars"></i>
@@ -46,7 +54,6 @@
           </div>
 
           <div class="header__right-column">
-
             <select class="select button">
               <option selected value="p">Т</option>
               <option value="h1">H<sub style="font-size: 10px;">1</sub></option>
@@ -56,42 +63,55 @@
 
             <select class="select button">
               <option selected value="p">Т</option>
-              <option value="ul"><i class="fas fa-list-ul"></i></option>
+              <option
+                value="ul"
+                data-content='<i class="fas fa-list-ul"></i>'
+              ></option>
               <option value="ol"><i class="fas fa-list-ol"></i></option>
             </select>
 
-            <button class="button">H<sub style="font-size: 10px;">1</sub></button>
+            <button class="button">
+              H<sub style="font-size: 10px;">1</sub>
+            </button>
             <button class="button">T</button>
             <button class="button"><i class="fas fa-paperclip"></i></button>
           </div>
-
         </header>
 
-        <main class='content'>
-          
-          <section class='date-inner'>
+        <main class="content">
+          <section class="date-inner">
             <div class="date-header">22.05.20</div>
-            <textarea class='date-text' rows='1'  placeholder='Short note on the date' maxlength='150'></textarea>
-            <span class="datetext-counter"><span class="char-counter">0</span>/150 characters used</span>
+            <textarea
+              class="date-text"
+              rows="1"
+              placeholder="Short note on the date"
+              maxlength="150"
+            ></textarea>
+            <span class="datetext-counter"
+              ><span class="char-counter">0</span>/150 characters used</span
+            >
           </section>
 
-          <section class='text-inner'>
+          <section class="text-inner">
             <div class="text-inner__separator"></div>
-            <div class = 'textBox' contenteditable=true>
-              What's new?
-            </div> 
+            <div
+              class="textBox"
+              autofocus="autofocus"
+              contenteditable="true"
+            ></div>
           </section>
-
         </main>
       </section>
     </div>
 
-  <script src="inputText.js"></script>
-  <script src="headerButtons.js"></script>
+    <script src="inputText.js"></script>
+    <script src="headerButtons.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b3e38a6dbf.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-
 
 <!-- 
 <textarea class="date-text" rows='1' maxlength='150' placeholder="Short note on date" name='datetext-input'></textarea>
