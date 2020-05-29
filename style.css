@@ -45,6 +45,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 120px;
+  width: 465px;
 }
 
 .logo {
@@ -60,6 +61,7 @@ body {
   height: calc(100vh - 240px);
   overflow-y: scroll;
   border-bottom: 1px solid #828282;
+  width: 465px;
 }
 
 .card {
@@ -102,6 +104,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 120px;
+  width: 465px;
 }
 
 .info-button{
@@ -128,7 +131,7 @@ body {
 .button {
   color: #828282;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
